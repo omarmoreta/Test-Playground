@@ -1,8 +1,11 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("header renders with correct text", () => {
+  //Create a virual DOM of desired component
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  //Access the virtual DOM and query the element by role
+  const headerEl = screen.getByRole("heading");
+  //Assertion to look for the element in the virtual DOM using toBe matcher to test exact equality
+  expect(headerEl.textContent).toBe("Testing Playground");
 });
