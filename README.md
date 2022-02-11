@@ -1,3 +1,6 @@
+# Test-Playground
+Test-Driven Development using React Testing Library and Jest to write and run tests
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
